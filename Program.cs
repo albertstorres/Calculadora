@@ -15,6 +15,7 @@ namespace Calculadora
                 Console.WriteLine("2 - SUBTRAÇÃO");
                 Console.WriteLine("3 - DIVISÃO");
                 Console.WriteLine("4 - MULTIPLICAÇÃO");
+                Console.WriteLine("5 - Sair");
                 Console.WriteLine("");
 
                 Console.WriteLine("Escolha uma opção: ");
@@ -26,6 +27,7 @@ namespace Calculadora
                     case 2: Subtracao(); break;
                     case 3: Divisao(); break;
                     case 4: Multiplicacao(); break;
+                    case 5: System.Environment.Exit(0); break;
                 }
             }
             while (opcao > 0 && opcao < 5);
